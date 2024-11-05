@@ -1,7 +1,10 @@
 ﻿using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.EntityFramework;
+using DTOLayer.DTOs.AnnoncementDTOs;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -39,6 +42,11 @@ namespace BusinessLayer.Container
             services.AddScoped<IAnnoncementService, AnnoncementManager>();
             services.AddScoped<IAnnoncementDal, EfAnnoncementDal>();
 
+        }
+
+        public static void CustomerValidator(this IServiceCollection services) 
+        {
+            services.AddTransient<IValidator<AnnoncementAddDto>, AnnoncementValidator>();
         }
     }
 }

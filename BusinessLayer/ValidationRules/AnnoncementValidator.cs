@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.ValidationRules
 {
-    public class AnnoncementValidator : AbstractValidator<AnnoncementAddDTOs>
+    public class AnnoncementValidator : AbstractValidator<AnnoncementAddDto>
     {
         public AnnoncementValidator() 
         {
