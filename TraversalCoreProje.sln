@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraversalCoreProje", "TraversalCoreProje\TraversalCoreProje.csproj", "{6A334585-0A8E-471F-9EB2-FEA983B0474B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TraversalCoreProje", "TraversalCoreProje\TraversalCoreProje.csproj", "{6A334585-0A8E-471F-9EB2-FEA983B0474B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{CD70BD6C-1A3E-47AE-88FB-20459887546C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{CD70BD6C-1A3E-47AE-88FB-20459887546C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{BA0B8107-E619-4067-BBF9-3ACFBF2462DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{BA0B8107-E619-4067-BBF9-3ACFBF2462DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{DD27D7B5-FF2D-4CAF-9F43-73B39B8DC904}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{DD27D7B5-FF2D-4CAF-9F43-73B39B8DC904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOLayer", "DTOLayer\DTOLayer.csproj", "{549F296F-AC9A-44BC-939B-74021FCD75CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DD27D7B5-FF2D-4CAF-9F43-73B39B8DC904}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD27D7B5-FF2D-4CAF-9F43-73B39B8DC904}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD27D7B5-FF2D-4CAF-9F43-73B39B8DC904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549F296F-AC9A-44BC-939B-74021FCD75CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549F296F-AC9A-44BC-939B-74021FCD75CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549F296F-AC9A-44BC-939B-74021FCD75CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549F296F-AC9A-44BC-939B-74021FCD75CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

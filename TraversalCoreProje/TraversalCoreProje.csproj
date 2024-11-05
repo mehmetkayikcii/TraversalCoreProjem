@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="ClosedXML" Version="0.104.1" />
     <PackageReference Include="EPPlus" Version="6.0.7" />
     <PackageReference Include="FluentValidation" Version="11.10.0" />
@@ -35,7 +36,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Member\Data\" />
     <Folder Include="Views\Shared\Components\_SliderPartial\" />
     <Folder Include="wwwroot\pdfreports\" />
