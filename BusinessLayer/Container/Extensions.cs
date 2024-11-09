@@ -1,8 +1,11 @@
 ﻿using BusinessLayer.Abstract;
+using BusinessLayer.Abstract.AbstractUow;
 using BusinessLayer.Concrete;
+using BusinessLayer.Concrete.ConcreteUow;
 using BusinessLayer.ValidationRules;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.EntityFramework;
+using DataAccessLayer.UnitOfWork;
 using DTOLayer.DTOs.AnnoncementDTOs;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
@@ -41,6 +44,11 @@ namespace BusinessLayer.Container
 
             services.AddScoped<IAnnoncementService, AnnoncementManager>();
             services.AddScoped<IAnnoncementDal, EfAnnoncementDal>();
+
+            services.AddScoped<IAccountService,AccountManager>();
+            services.AddScoped<IAccountDal,EfAccountDal>();
+
+            services.AddScoped<IUowDal,UowDal>();
 
         }
 
