@@ -11,8 +11,9 @@ namespace TraversalCoreProje.Controllers
         CommentManager commentManager = new CommentManager(new EfCommentDal());
 
         [HttpGet]
-        public PartialViewResult AddComment()
+        public PartialViewResult AddComment(int id)
         {
+            ViewBag.destID = id;
             return PartialView();
         }
 
