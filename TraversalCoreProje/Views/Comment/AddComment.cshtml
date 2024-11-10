@@ -7,7 +7,7 @@
         </p>
         <form method="post" asp-action="AddComment" asp-controller="Comment">
             <input type="hidden" name="DestinationID" value="@ViewBag.destID" />
-            @* <input type="hidden" name="AppUserID" value="@ViewBag.userID" /> *@
+            <input type="hidden" name="AppUserID" value="@ViewBag.userID" />
             <div class="form-group">
                 <textarea name="CommentContent" class="form-control" placeholder="Yorumunuz*" required=""
                           spellcheck="false"></textarea>
