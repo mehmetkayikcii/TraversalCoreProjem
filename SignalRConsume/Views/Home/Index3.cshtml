@@ -17,7 +17,7 @@
 
             visitChartList.push(["Tarih", "Edirne", "İstanbul", "Ankara", "Antalya", "Bursa"])
 
-            var connection = new signalR.HubConnectionBuilder().withUrl("http://localhost:37469/VisitorHub").build();
+                var connection = new signalR.HubConnectionBuilder().withUrl("http://localhost:37469/VisitorHub").build();
 
             $("#connectionStatus").text(connection.connectionState);
 
